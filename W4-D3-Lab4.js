@@ -28,6 +28,20 @@ const saudiaAirlines = {
       `${this.airlineName} operates in ${this.country}, has ${this.fleetSize} aircraft, and flies to ${numDests} destinations.`
     );
   },
+
+  multi: (n1, n2) => {
+    console.log(n1 * n2);
+  },
+
+  sub: (n1, n2) => {
+    console.log(n1 - n2);
+  },
+  plus: (n1, n2) => {
+    console.log(n1 + n2);
+  },
+  div: (n1, n2) => {
+    console.log(n1 / n2);
+  },
 };
 
 saudiaAirlines.getSummary();
@@ -41,3 +55,8 @@ saudiaAirlines.addDestination("London");
 saudiaAirlines.addDestination("Dubai");
 
 saudiaAirlines.getSummary();
+
+saudiaAirlines.multi(3, 3);
+saudiaAirlines.sub(3, 3);
+saudiaAirlines.plus(3, 3);
+saudiaAirlines.div(3, 3);
